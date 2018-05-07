@@ -18,8 +18,8 @@ class Route {
   }
 
   blocksTravelled() {
-    verticalDistance = Math.abs(this.beginningLocation.vertical - this.endingLocation.vertical)
-    horizontalDistance = Math.abs(eastWest.indexOf(this.beginningLocation.horizontal) - eastWest.indexOf(this.endingLocation.horizontal))
+    let verticalDistance = Math.abs(this.beginningLocation.vertical - this.endingLocation.vertical)
+    let horizontalDistance = Math.abs(eastWest.indexOf(this.beginningLocation.horizontal) - eastWest.indexOf(this.endingLocation.horizontal))
     return verticalDistance + horizontalDistance
   }
 
