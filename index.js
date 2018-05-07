@@ -19,7 +19,8 @@ class Route {
 
   blocksTravelled() {
     verticalDistance = Math.abs(beginningLocation.vertical - endingLocation.vertical)
-
+    horizontalDistance = Math.abs(eastWest.indexOf(beginningLocation.horizontal) - eastWest.indexOf(endingLocation.horizontal))
+    return verticalDistance + horizontalDistance
   }
 
   estimatedTime() {
